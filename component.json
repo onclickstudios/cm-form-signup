@@ -6,7 +6,8 @@
   "keywords": [],
   "dependencies": {
     "tjb1982/hoquet": "*",
-    "onclickstudios/cmp-form":"*"
+    "onclickstudios/cmp-form":"*",
+    "component/dom":"*"
   },
   "development": {},
   "license": "MIT",
