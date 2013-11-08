@@ -1,13 +1,11 @@
 {
-  "name": "cmp-form-signup",
-  "repo": "onclickstudios/cmp-form-signup",
+  "name": "cm-form-signup",
+  "repo": "onclickstudios/cm-form-signup",
   "description": "Basic signup form",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "tjb1982/hoquet": "*",
-    "onclickstudios/cmp-form":"*",
-    "component/dom":"*"
+    "tjb1982/hoquet": "*"
   },
   "development": {},
   "license": "MIT",

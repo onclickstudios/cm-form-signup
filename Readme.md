@@ -1,5 +1,5 @@
 
-# nclk-form-signup
+# cm-form-signup
 
   Basic signup form
 
@@ -7,7 +7,7 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install onclickstudios/nclk-form-signup
+    $ component install onclickstudios/cm-form-signup
 
 ## API
 
