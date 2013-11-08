@@ -19,4 +19,4 @@ function cmFormSignup(action, data) {
   );
   
 }
-module.exports = cmpFormSignup;
+module.exports = cmFormSignup;
