@@ -6,7 +6,9 @@
   "keywords": [],
   "dependencies": {
     "tjb1982/hoquet": "*",
-    "visionmedia/superagent":"*"
+    "visionmedia/superagent":"*",
+    "JayceTDE/serialize":"*",
+    "component/event":"*"
   },
   "development": {},
   "license": "MIT",
