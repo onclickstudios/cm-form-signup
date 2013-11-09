@@ -1,5 +1,6 @@
 var
-hoquet = require('hoquet');
+hoquet = require('hoquet'),
+sa = require('superagent');
 
 /**
  * 

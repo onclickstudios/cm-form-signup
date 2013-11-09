@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "tjb1982/hoquet": "*"
+    "tjb1982/hoquet": "*",
+    "visionmedia/superagent":"*"
   },
   "development": {},
   "license": "MIT",
