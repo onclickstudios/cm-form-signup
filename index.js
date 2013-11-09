@@ -6,11 +6,15 @@ hoquet = require('hoquet');
  * @param action String form action
  * @param data Object optional data to prepopulate the form
  */
-function cmFormSignup(action, data) {
-  
+function cmFormSignup(context) {
+  var data = context.data || {};
   return hoquet.render(
     ['form',
-     {action:action, method:'post', class:'cm cm-form cm-form-signup'},
+     {
+       action:(context && context.action),
+       method:(context && context.method || 'post'),
+       class:'cm cm-form cm-form-signup' + (context && context.class || '')
+     },
      ['input', {type:'text', name:'username', placeholder:'username', value:data && data.username}],
      ['input', {type:'text', name:'email', placeholder:'e-mail address', value:data && data.email}],
      ['input', {type:'password', name:'password', placeholder:'password', value:data && data.password}],
@@ -19,4 +23,5 @@ function cmFormSignup(action, data) {
   );
   
 }
+
 module.exports = cmFormSignup;
