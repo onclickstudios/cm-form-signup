@@ -5,10 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "tjb1982/hoquet": "*",
-    "visionmedia/superagent":"*",
-    "JayceTDE/serialize":"*",
-    "component/event":"*"
+    "tjb1982/hoquet": "*"
   },
   "development": {},
   "license": "MIT",

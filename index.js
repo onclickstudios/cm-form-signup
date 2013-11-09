@@ -1,30 +1,10 @@
 var
 hoquet = require('hoquet');
 
-var script = function () {
-  var
-  sa = require('visionmedia-superagent'),
-  serialize = require('JayceTDE-serialize'),
-  ev = require('component-event');
-  
-  var form = document.querySelector('.cm-form-signup');
-  
-  ev.bind(form, 'submit', function(e) {
-    e.preventDefault();
-    var p = serialize(form);
-    console.log(p);
-  });
-  
-  sa.get('http://localhost:3000/login', function(e,s) {
-    e ? console.error(e)
-    : document.querySelector('[name=username]')
-  });
-};
-
 /**
  * 
- * @param action String form action
- * @param data Object optional data to prepopulate the form
+ * @param context Object
+ * @returns
  */
 function cmFormSignup(context) {
   var data = context.data || {};
@@ -39,8 +19,7 @@ function cmFormSignup(context) {
      ['input', {type:'text', name:'email', placeholder:'e-mail address', value:data && data.email}],
      ['input', {type:'password', name:'password', placeholder:'password', value:data && data.password}],
      ['input', {type:'password', name:'confirm', placeholder:'confirm password', value:data && data.confirm}],
-     ['input', {type:'submit', name:'submit', value:data && data.submit || 'submit'}]],
-     ['script', {type:'text/javascript'}, hoquet.strScript(script)]
+     ['input', {type:'submit', name:'submit', value:data && data.submit || 'submit'}]]
   );
   
 }
