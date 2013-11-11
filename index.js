@@ -19,8 +19,7 @@ function cmFormSignup(context) {
      ['input', {type:'text', name:'email', placeholder:'e-mail address', value:data && data.email}],
      ['input', {type:'password', name:'password', placeholder:'password', value:data && data.password}],
      ['input', {type:'password', name:'confirm', placeholder:'confirm password', value:data && data.confirm}],
-     ['input', {type:'submit', name:'submit', value:data && data.submit || 'submit'}]],
-     ['p', ['span',{id:'cm-form-signup-info-span'}, '']]
+     ['input', {type:'submit', name:'submit', value:data && data.submit || 'submit'}]]
   );
   
 }
