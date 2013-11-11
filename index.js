@@ -7,13 +7,15 @@ hoquet = require('hoquet');
  * @returns
  */
 function cmFormSignup(context) {
+  context = context || {};
   var data = context.data || {};
+  
   return hoquet.render(
     ['form',
      {
-       action:(context && context.action),
-       method:(context && context.method || 'post'),
-       class:'cm cm-form cm-form-signup' + (context && context.class || '')
+       action:context.action + (context.query || ''),
+       method:(context.method || 'post'),
+       class:'cm cm-form cm-form-signup' + (context.class || '')
      },
      ['input', {type:'text', name:'username', placeholder:'username', value:data && data.username}],
      ['input', {type:'text', name:'email', placeholder:'e-mail address', value:data && data.email}],
